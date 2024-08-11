@@ -1,5 +1,5 @@
 import React from 'react'
-import './main.css'
+import './main.scss'
 
 import img from '../../assets/img1.jpg'
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -70,7 +70,7 @@ const Main = () => {
                 <span className='name'>{location}</span>
                 </span>
 
-                <div className="fees">
+                <div className="fees ">
 
                   <div className="grade">
                     <span>{grade} <small>+1</small></span>
