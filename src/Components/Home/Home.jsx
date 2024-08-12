@@ -8,7 +8,7 @@ import { FaTripadvisor } from "react-icons/fa";
 import { BsListTask } from "react-icons/bs";
 import { TbApps } from "react-icons/tb";
 
-import video from '../../assets/video.mp4'
+import video from '../../assets/video2.mp4'
 
 const Home = () => {
   return (

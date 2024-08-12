@@ -1,47 +1,51 @@
 import React from 'react'
 import './main.scss'
 
-import img from '../../assets/img1.jpg'
+import img1 from '../../assets/img1.jpg'
+import img2 from '../../assets/img2.jpg'
+import img3 from '../../assets/img3.jpg'
+import img4 from '../../assets/img4.jpg'
+
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
 
 const Data = [
   {
     id: 1,
-    imgSrc: img,
+    imgSrc: img1,
     destTitle: 'World Largest',
     location: 'Nepal',
     grade: 'NATURAL PLACE',
     fees: '$6000',
     description: 'The place of natural beauty, geography, altitude. This place is known for best travel adventures.',
   },
-  // {
-  //   id: 2,
-  //   imgSrc: img,
-  //   destTitle: 'World Largest',
-  //   location: 'Nepal',
-  //   grade: 'NATURAL PLACE',
-  //   fees: '$6000',
-  //   description: 'The place of natural beauty, geography, altitude. This place is known for best travel adventures.',
-  // },
-  // {
-  //   id: 3,
-  //   imgSrc: img,
-  //   destTitle: 'World Largest',
-  //   location: 'Nepal',
-  //   grade: 'NATURAL PLACE',
-  //   fees: '$6000',
-  //   description: 'The place of natural beauty, geography, altitude. This place is known for best travel adventures.',
-  // },
-  // {
-  //   id: 4,
-  //   imgSrc: img,
-  //   destTitle: 'World Largest',
-  //   location: 'Nepal',
-  //   grade: 'NATURAL PLACE',
-  //   fees: '$6000',
-  //   description: 'The place of natural beauty, geography, altitude. This place is known for best travel adventures.',
-  // },
+  {
+    id: 2,
+    imgSrc: img2,
+    destTitle: 'World Largest',
+    location: 'Nepal',
+    grade: 'NATURAL PLACE',
+    fees: '$6000',
+    description: 'The place of natural beauty, geography, altitude. This place is known for best travel adventures.',
+  },
+  {
+    id: 3,
+    imgSrc: img3,
+    destTitle: 'World Largest',
+    location: 'Nepal',
+    grade: 'NATURAL PLACE',
+    fees: '$6000',
+    description: 'The place of natural beauty, geography, altitude. This place is known for best travel adventures.',
+  },
+  {
+    id: 4,
+    imgSrc: img4,
+    destTitle: 'World Largest',
+    location: 'Nepal',
+    grade: 'NATURAL PLACE',
+    fees: '$6000',
+    description: 'The place of natural beauty, geography, altitude. This place is known for best travel adventures.',
+  },
 ]
 
 const Main = () => {
