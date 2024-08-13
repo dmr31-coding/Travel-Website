@@ -1,10 +1,14 @@
 import React from 'react'
 import './main.scss'
+import { useEffect } from 'react'
 
 import img1 from '../../assets/img1.jpg'
 import img2 from '../../assets/img2.jpg'
 import img3 from '../../assets/img3.jpg'
 import img4 from '../../assets/img4.jpg'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
@@ -49,10 +53,16 @@ const Data = [
 ]
 
 const Main = () => {
+
+  // creating a react hook to add a scroll animation...
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  })
+
   return (
     <section className='main container section '>
       <div className="secTitle">
-        <h3 className="title">
+        <h3 data-aos="fade-right" className="title">
           Most Visited Destinations
         </h3>
       </div>
@@ -61,7 +71,7 @@ const Main = () => {
         {
           Data.map(({ id, imgSrc, destTitle, location, grade, fees, description }) => {
             return(
-              <div key={id} className='singleDestination'>
+              <div key={id} data-aos="fade-up" className='singleDestination'>
 
               <div className="imageDiv">
                 <img src={imgSrc} alt={destTitle} />
